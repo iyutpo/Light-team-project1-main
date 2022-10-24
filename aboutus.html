@@ -19,40 +19,95 @@
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
 </head>
 
+<style>
+  @media only screen and (max-width: 1199px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 1200px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+</style>
+
 <body>
   <!-- Sticky top -->
   <header class="splash-site-header sticky-top fixed-md-top">
-    <nav class="navbar navbar-expand-md">
+    <nav class="navbar navbar-expand-lg">
       <div class="navbar-brand nav-logo">
-        <a href="./index-locations/index.html">
-          <img src="../images/logo-small.png" alt="log-small" />
+        <a href="index.html">
+          <img src="./images/logo-small.png" alt="log-small" />
         </a>
       </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
-        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarContent"
+        aria-controls="navbarContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon collapse-svg"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-md-around position-relative" id="navbarContent">
+      <div
+        class="collapse navbar-collapse justify-content-md-around position-relative"
+        id="navbarContent"
+      >
         <ul class="navbar-nav nav-container">
           <li class="nav-item">
-            <a class="nav-link text-white" href="../index-locations/index.html">Home</a>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="aboutus.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="swimlessons.html">Swimming Lessons</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="Swimprograms.html">Swim Programs</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="adultprograms.html">Adult Programs</a>
-          </li>
+          <a class="nav-link text-white" href="../index-locations/index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="/aboutus.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="/swimlessons.html">Swimming Lessons</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="/Swimprograms.html">Swim Programs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="/adultprograms.html">Adult Programs</a>
+        </li>
           <li class="nav-item nav-location">
             <div class="dropdown show position-static">
-              <a class="nav-link text-white dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Locations</a>
-              <div class="dropdown-menu box-container" aria-labelledby="dropdownMenuLink">
+              <a
+                class="nav-link text-white dropdown-toggle"
+                href="#"
+                role="button"
+                id="dropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Locations</a
+              >
+              <div
+                class="dropdown-menu box-container"
+                aria-labelledby="dropdownMenuLink"
+              >
                 <div class="row">
                   <div class="location-box col-md-3 col-6">
                     <div>Orange County</div>
@@ -108,8 +163,13 @@
             <a class="nav-link text-white" href="contact.html">Contact US</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link btn btn-secondary login" href="#" data-toggle="modal" data-target="#myModal">Register /
-              Sign In</a>
+            <a
+              class="nav-link btn btn-secondary login"
+              href="#"
+              data-toggle="modal"
+              data-target="#myModal"
+              >Register / Sign In</a
+            >
           </li>
         </ul>
       </div>
@@ -164,13 +224,11 @@
   </div>
   <!-- Main -->
   <main>
-
-
     <div class="container-fluid banner-wrapper p-0" >
         <img class="w-100 banner-image" src="./images/about-our-philosophy-bg.jpeg" alt="Home Banner" />
         <div class="centered text-white text-center" style="margin-left: auto; margin-right: auto;">
           <br>
-        <h2 style="text-align: center; color: black;">Our Philosophy</h2>
+        <h2 style="text-align: center; color: black; font-weight: bold;">Our Philosophy</h2>
         <p style="text-align: center; font-size: 2vw; color: black;">Our mission is to educate and motivate individuals to be safer and learn proper swimming technique.</p>
         <p style="text-align: center; font-size: 2vw; color: black">We have chosen to share our love of swimming with children and believe there is a swimmer in every child. We pride ourselves on teaching the necessary skills needed to become a comfortable, proficient swimmer right from the beginning.</p>
         <!-- <br><br> -->
@@ -179,11 +237,11 @@
     <div class="container-fluid banner-wrapper p-0" style="background-image: url('./images/about-we-do-a-pretty-good-job-bg.jpeg'); 
          width: 100%; height: 100%; text-align: center;">
         <br><br><br><br>
-        <h2 style="text-align: center;">We Do A Pretty Good Job</h2>
+        <h2 style="text-align: center; font-weight: bold;">We Do A Pretty Good Job</h2>
         <p style="text-align: center; font-size: 2vw; margin-left: 10%; margin-right: 10%">Experience excellence through Splashes award-winning programs where safety, fast progress, and a fun environment come first. Join the swim school that loves what they do and it shows.</p>
         <br>
         <br>
-        <a href="./aboutus.html" style="text-align: center; font-size: 4vw; padding: 1em;">Hear What Families Are Saying About Us</a>
+        <a href="./aboutus.html" style="text-align: center; font-size: 3vw; padding: 1em;">Hear What Families Are Saying About Us</a>
         <br><br><br><br><br><br><br><br>
     </div>
   </main>
@@ -200,7 +258,7 @@
   <!-- Awards -->
   <section>
     <div class="awards-section my-5 contanier-fluid text-center w-100 m-auto">
-      <h2 class="px-2">Awards We've Won</h2>
+      <h2 class="px-2" style="font-weight: bold;">Awards We've Won</h2>
       <div class="awards mt-5 row" id="awards">
       </div>
     </div>
@@ -211,16 +269,17 @@
     <div class="footer-logo">
       <img src="images/wave-small.png" alt="footer-logo" />
     </div>
-    <div class="footer-part-one row mt-5">
-      <div class="col-md-6 col-12">
+    <div class="row" style="">
+    
+      <div class="col-6 col-s-9">
         <nav class="navbar navbar-expand">
-          <ul class="navbar-nav nav-container">
+          <ul class="navbar-nav nav-container" id="bottom">
             <li class="nav-item">
               <a class="nav-link" href="#">About</a>
             </li>
             <li class="nav-item">
               <!-- target top location and open -->
-              <a class="nav-link" href="#">Locations</a>
+              <a class="nav-link" href="#" >Locations</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">FAQs</a>
@@ -229,7 +288,7 @@
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Register / Sign In</a>
+              <a class="nav-link" href="#">Register/Sign In</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Careers</a>
@@ -237,7 +296,64 @@
           </ul>
         </nav>
       </div>
-      <div class="col-md-6 col-12 icon-wrapper">
+    
+      <div class="col-3 col-s-12" style="vertical-align: middle;">
+        <a class="fa-stack" style="vertical-align: middle;" href="#">
+          <i class="fa-solid fa-circle fa-stack-2x" style="color: #055e97"></i>
+          <i class="fa-brands fa-linkedin-in fa-stack-1x fa-inverse"></i>
+        </a>
+        <a class="fa-stack" style="vertical-align: middle" href="#">
+          <i class="fa-solid fa-circle fa-stack-2x" style="color: #656667"></i>
+          <i class="fa-brands fa-instagram fa-stack-1x fa-inverse"></i>
+        </a>
+        <a class="fa-stack" style="vertical-align: middle" href="#">
+          <i class="fa-solid fa-circle fa-stack-2x" style="color: #27dffd"></i>
+          <i class="fa-brands fa-twitter fa-stack-1x fa-inverse"></i>
+        </a>
+        <a class="fa-stack" style="vertical-align: middle" href="#">
+          <i class="fa-solid fa-circle fa-stack-2x" style="color: #cc0c24"></i>
+          <i class="fa-brands fa-yelp fa-stack-1x fa-inverse"></i>
+        </a>
+        <a class="fa-stack" style="vertical-align: middle" href="#">
+          <i class="fa-solid fa-circle fa-stack-2x" style="color: #71b4fc"></i>
+          <i class="fa-brands fa-facebook-f fa-stack-1x fa-inverse"></i>
+        </a>
+        <a class="fa-stack" style="vertical-align: middle" href="#">
+          <i class="fa-solid fa-circle fa-stack-2x" style="color: #cc0c24"></i>
+          <i class="fa-brands fa-youtube fa-stack-1x fa-inverse"></i>
+        </a>
+      </div>
+    </div>
+
+
+    <!-- footer nav and icons -->
+    <div class="footer-part-one row mt-5">
+      <div class="col-md-6 col-12">
+        <nav class="navbar navbar-expand">
+          <ul class="navbar-nav nav-container" id="bottom">
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <!-- target top location and open -->
+              <a class="nav-link" href="#" >Locations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Register/Sign In</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Careers</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-md-6 icon-wrapper">
         <a class="fa-stack" style="vertical-align: top; margin-left: 200px" href="#">
           <i class="fa-solid fa-circle fa-stack-2x" style="color: #055e97"></i>
           <i class="fa-brands fa-linkedin-in fa-stack-1x fa-inverse"></i>
@@ -264,6 +380,8 @@
         </a>
       </div>
     </div>
+
+    <!-- footer -->
     <div class="footer-contact-container">
       <div class="footer-contact">
         <div>
@@ -326,72 +444,6 @@
 
 
 
-
-
-
-
-
-
-
-<!-- <html>
-  <head>
-    <title>About Us</title>
-  </head>
-  <body>
-    <nav>
-      <ul>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="../index-locations/index.html"
-            >Home</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="/aboutus.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="/swimlessons.html"
-            >Swimming Lessons</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="/Swimprograms.html"
-            >Swim Programs</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="/adultprograms.html"
-            >Adult Programs</a
-          >
-        </li>
-      </ul>
-    </nav>
-    <h1>About Splashes Aquatics</h1>
-
-    <h1>Our Philosophy</h1>
-
-    <p>
-      Our mission is to educate and motivate individuals to be safer and learn
-      proper swimming technique.
-    </p>
-    <p>
-      We have chosen to share our love of swimming with children and believe
-      there is a swimmer in every child. We pride ourselves on teaching the
-      necessary skills needed to become a comfortable, proficient swimmer right
-      from the beginning.
-    </p>
-
-    <h1>We Do A Pretty Good Job</h1>
-    <p>
-      Experience excellence through Splashes award-winning programs where
-      safety, fast progress, and a fun environment come first. Join the swim
-      school that loves what they do and it shows.
-    </p>
-  </body>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</html> -->
 
 
 

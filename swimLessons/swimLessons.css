@@ -495,3 +495,9 @@ button {
     height: 40vh;
   }
 }
+@media screen and (min-width:320px) {
+  .banner-image {
+    height: auto;
+    /* margin-top: px; */
+  }
+}
