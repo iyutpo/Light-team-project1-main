@@ -26,6 +26,8 @@ body {
 * {
   padding: 0;
   margin: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 h1 {
   font-family: "Bodoni Moda";
@@ -477,3 +479,9 @@ button {
     height: 40vh;
   }
 }
+/* @media screen and (max-width: 320px) {
+  .footernav {
+    display: flex;
+    flex-direction: column;
+  }
+} */

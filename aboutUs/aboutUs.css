@@ -477,6 +477,8 @@ button {
   }
 }
 
-/* #bottom a.nav-link {
-  font-size: 2.5vw;
-} */
+#bottom a.nav-link {
+  text-decoration: underline;
+  color: black;
+  font-weight: bold;
+}
