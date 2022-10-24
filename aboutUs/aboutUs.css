@@ -22,6 +22,7 @@ strong {
 }
 body {
   color: var(--black);
+  overflow-y: scroll;
 }
 * {
   padding: 0;
@@ -192,7 +193,7 @@ button {
 @media (max-width: 767px) {
   .splash-site-header .btn.btn-secondary {
     width: 87%;
-    margin: auto;
+    /* margin: auto; */
   }
 
   .splash-site-header li {
@@ -458,7 +459,7 @@ button {
   }
 
   .splash-site-footer .footer-part-two .sponsors-logo > div:last-child {
-    margin: auto;
+    /* margin: auto; */
   }
 }
 
@@ -474,7 +475,7 @@ button {
 /* Mobile */
 @media screen and (max-width: 577px) {
   .banner-image {
-    height: 40vh;
+    height: 16vh;
   }
 }
 

@@ -22,13 +22,16 @@ strong {
 }
 body {
   color: var(--black);
+  
+  overflow-y: scroll;
 }
+
 * {
   padding: 0;
   margin: 0;
   list-style: none;
-
 }
+
 h1 {
   font-family: "Bodoni Moda";
   font-size: 3em;

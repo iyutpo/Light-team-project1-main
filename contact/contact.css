@@ -21,10 +21,13 @@ strong {
 }
 body {
   color: var(--black);
+  overflow-y: scroll;
 }
 * {
   padding: 0;
   margin: 0;
+  list-style: none;
+  overflow-x: hidden;
 }
 h1 {
   font-family: "Bodoni Moda";
@@ -49,9 +52,9 @@ h4 {
   font-size: 1.3em !important;
   font-weight: bold;
 }
-a {
+/* a {
   color: var(--blue) !important;
-}
+} */
 
 body {
   font-family: "Open Sans" !important;
@@ -557,7 +560,7 @@ section {
   }
 
   .splash-site-footer .footer-part-two .sponsors-logo > div:last-child {
-    margin: auto;
+    /* margin: auto; */
   }
 }
 
@@ -573,6 +576,7 @@ section {
 /* Mobile */
 @media screen and (max-width: 577px) {
   .banner-image {
-    height: 40vh;
+    height: 15vh;
+    
   }
 }

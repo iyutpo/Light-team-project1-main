@@ -21,10 +21,13 @@ strong {
 }
 body {
   color: var(--black);
+  overflow-y: scroll;
 }
 * {
   padding: 0;
   margin: 0;
+  list-style-type: none;
+  
 }
 h1 {
   font-family: "Bodoni Moda";
@@ -49,9 +52,9 @@ h4 {
   font-size: 1.3em !important;
   font-weight: bold;
 }
-a {
+/* a {
   color: var(--blue) !important;
-}
+} */
 
 body {
   font-family: "Open Sans" !important;
@@ -474,10 +477,9 @@ button {
     text-align: center;
     margin-top: 30px;
   }
-
-  .splash-site-footer .footer-part-two .sponsors-logo > div:last-child {
+}
+  /* .splash-site-footer .footer-part-two .sponsors-logo > div:last-child {
     margin: auto;
-  }
 }
 
 /* MEDIA QUERIES */
@@ -492,7 +494,7 @@ button {
 /* Mobile */
 @media screen and (max-width: 577px) {
   .banner-image {
-    height: 40vh;
+    height: 18vh !important;
   }
 }
 @media screen and (min-width:320px) {
