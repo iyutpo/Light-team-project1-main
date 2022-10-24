@@ -19,38 +19,6 @@
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
 </head>
 
-<style>
-  @media only screen and (max-width: 1199px) {
-  /* For tablets: */
-  .col-s-1 {width: 8.33%;}
-  .col-s-2 {width: 16.66%;}
-  .col-s-3 {width: 25%;}
-  .col-s-4 {width: 33.33%;}
-  .col-s-5 {width: 41.66%;}
-  .col-s-6 {width: 50%;}
-  .col-s-7 {width: 58.33%;}
-  .col-s-8 {width: 66.66%;}
-  .col-s-9 {width: 75%;}
-  .col-s-10 {width: 83.33%;}
-  .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
-}
-@media only screen and (min-width: 1200px) {
-  /* For desktop: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
-}
-</style>
 
 <body>
   <!-- Sticky top -->
@@ -160,7 +128,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="contact.html">Contact US</a>
+            <a class="nav-link text-white" href="contact.html">Contact Us</a>
           </li>
           <li class="nav-item">
             <a
@@ -267,13 +235,14 @@
   <!-- Footer -->
   <footer class="splash-site-footer">
     <div class="footer-logo">
-      <img src="images/wave-small.png" alt="footer-logo" />
+      <img src="../images/wave-small.png" alt="footer-logo" />
     </div>
+
     <div class="row" style="text-align: center; ">
     
-      <div class="col-6 col-s-12">
-        <nav class="navbar navbar-expand justify-content-center">
-          <ul class="navbar-nav nav-container" id="bottom">
+      <div class="">
+        <nav class="footer-contact-container">
+          <ul class="footer-contact" id="bottom">
             <li class="nav-item">
               <a class="nav-link" href="#">About</a>
             </li>
@@ -296,8 +265,8 @@
           </ul>
         </nav>
       </div>
-    
-      <div class="col-3 col-s-12" style="vertical-align: middle; text-align: center; ">
+        <div class="foot-contact-container">
+      <div class="col-s-12" style="vertical-align: middle; text-align: center; ">
         <a class="fa-stack" style="vertical-align: middle;" href="#">
           <i class="fa-solid fa-circle fa-stack-2x" style="color: #055e97"></i>
           <i class="fa-brands fa-linkedin-in fa-stack-1x fa-inverse"></i>
@@ -324,27 +293,25 @@
         </a>
       </div>
     </div>
-
-
-    <!-- footer nav and icons -->
+  </div>
     <!-- <div class="footer-part-one row mt-5">
       <div class="col-md-6 col-12">
-        <nav class="navbar navbar-expand">
-          <ul class="navbar-nav nav-container" id="bottom">
+        <nav  id="footernav">
+          <ul class="navbar-nav nav-container">
             <li class="nav-item">
               <a class="nav-link" href="#">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" >Locations</a>
+              <a class="nav-link" href="#">Locations</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">FAQs</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="/contact.html">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Register/Sign In</a>
+              <a class="nav-link" href="#">Register / Sign In</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Careers</a>
@@ -352,7 +319,7 @@
           </ul>
         </nav>
       </div>
-      <div class="col-md-6 icon-wrapper">
+      <div class="col-md-6 col-12 icon-wrapper">
         <a class="fa-stack" style="vertical-align: top; margin-left: 200px" href="#">
           <i class="fa-solid fa-circle fa-stack-2x" style="color: #055e97"></i>
           <i class="fa-brands fa-linkedin-in fa-stack-1x fa-inverse"></i>
@@ -380,7 +347,8 @@
       </div>
     </div> -->
 
-    <!-- footer -->
+
+
     <div class="footer-contact-container">
       <div class="footer-contact">
         <div>
@@ -409,16 +377,16 @@
       <div class="footer-part-two row">
         <div class="col-sm-8 col-12 sponsors-logo">
           <div>
-            <img src="images/footer-usssa-logo-2.png" alt="usssa-logo" />
+            <img src="../images/footer-usssa-logo-2.png" alt="usssa-logo" />
           </div>
           <div>
-            <img src="images/footer-ndpa-logo.png" alt="ndpa-logo" />
+            <img src="../images/footer-ndpa-logo.png" alt="ndpa-logo" />
           </div>
           <div>
-            <img src="images/footer-member-issa-logo.png" alt="issa-logo" />
+            <img src="../images/footer-member-issa-logo.png" alt="issa-logo" />
           </div>
           <div>
-            <img src="images/footer-stop-drowning-now-logo.png" alt="stop-logo" />
+            <img src="../images/footer-stop-drowning-now-logo.png" alt="stop-logo" />
           </div>
         </div>
         <div class="col-sm-4 col-12 copyright">
@@ -434,19 +402,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <!-- Nav bar js -->
-  <script src="./aboutUs/aboutUs.js"></script>
+  <script src="./index-locations/index.js"></script>
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
